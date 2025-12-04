@@ -6,9 +6,10 @@
     <meta name="robots" content="noindex, nofollow" />
     <meta name="googlebot" content="noindex" />
     <title>友链状态检测 - GitHub Action 监测</title>
+    <!-- 替换为国内CDN的思源宋体（删除原失效的京華老宋体链接） -->
     <link
+      href="https://cdn.bootcdn.net/ajax/libs/noto-serif-sc/1.001/noto-serif-sc.css"
       rel="stylesheet"
-      href="https://chinese-fonts-cdn.deno.dev/packages/jhlst/dist/京華老宋体v1_007/result.css"
     />
     <link
       href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -43,7 +44,8 @@
       }
 
       body {
-        font-family: "KingHwa_OldSong", "Noto Serif SC", serif;
+        /* 调整字体优先级：思源宋体优先，兼容原字体名（不影响） */
+        font-family: "Noto Serif SC", "KingHwa_OldSong", serif;
         margin: 0;
         padding: 40px 20px;
         background-color: var(--background-color);
